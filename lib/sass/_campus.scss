@@ -55,6 +55,10 @@ svg {
     fill: $pastelorange;
   } // resident-parking
 
+  .staff-parking2 {
+    fill: $pastelorange;
+  } // staff-parking
+
   .visitor-parking {
     fill: $brown;
   } // visitor-parking
@@ -68,7 +72,7 @@ svg {
   } // reserved-parking
 
     .severe-weather {
-      fill: $brightgreen;
+      fill: $brightred;
     } // severe-weather
 
     .fire-extinguisher {
@@ -76,11 +80,11 @@ svg {
     } // fire-extinguisher
 
     .defibrillator {
-      fill: $brightorange;
+      fill: $brightred;
     } // defibrillator
 
     .fire-switch {
-      fill: $brightblue;
+      fill: $brightred;
     } // fire-switch
 
   #parking-deck {

@@ -4,4 +4,12 @@
   border: 1px solid #000;
   width: $radius;
   height: $radius;
+
+}
+
+@mixin svgImages($image, $size) {
+width: $size;
+height: $size;
+background-image: $image();
+
 }
