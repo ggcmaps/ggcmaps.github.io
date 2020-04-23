@@ -80,6 +80,83 @@ body {
     } // h2
   } // search-menu
 
+  #travelTimesLegend
+  {
+    @include box-shadow;
+    display: none;
+    background-color: #FFF;
+    padding: 10px;
+    position: fixed;
+    width: 200px;
+    right: 30px;
+    top: 30px;
+    text-align: center;
+    color: $green;
+    h4, hr
+    {color: $green;}
+    img {width: 20px;}
+    div{text-align: center;}
+    section {display: flex;}
+    span {font-size: 18px;}
+    #travelTimesWalkingIcon{display:none;}
+  }
+  #routeSelectorLegend
+  {
+    @include box-shadow;
+    display: none;
+    background-color: $border;
+    padding: 3px 10px;
+    position: fixed;
+    bottom: 20px;
+    left: 35%;
+    align-items: center;
+    h2 
+    {
+      display: inline-block;
+      color: $green;
+      font-size: 16px;
+      font-weight: normal;
+      padding: 10px;
+      &:hover {
+        cursor: default;
+      } // h2:hover
+    } // h2
+  }// time-travel-routes
+  #diningTimes{
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    right: 0;
+  }
+  @media only screen and (max-width: 600px) 
+  {
+    #travelTimesLegend
+    {
+      top: 65px;
+      width: 90px;
+      left: 10px;
+      h4{ font-size: 16px; }
+      span { font-size: 14px; }
+    }
+    #routeSelectorLegend 
+    {
+      left: 10px;
+      bottom: 10px;
+      h2
+      { 
+        font-size: 14px;
+        padding: 6px; 
+      }
+      select { font-size: 10px; }
+      option { font-size: 10px; }
+    }
+    #diningTimes{
+      width:100%;
+      height: 300px;
+      bottom: 0;
+    }
+  }
+  
   .dropdown {
     position: relative;
     padding-left: 0;
